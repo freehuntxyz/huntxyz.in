@@ -10,7 +10,7 @@ const DATA_FILE = path.join(__dirname, "data.json");
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "../frontend")));
+app.use(express.static(path.join(__dirname)));
 
 // Get all targets
 app.get("/api/targets", async (req, res) => {
