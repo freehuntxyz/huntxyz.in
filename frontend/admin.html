@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Admin Panel</h2>
+  <form id="target-form">
+    <input type="text" id="targetName" placeholder="Target Name" required>
+    <input type="text" id="assets" placeholder="Assets" required>
+    <select id="priority">
+      <option value="Tier 1">Tier 1</option>
+      <option value="Tier 2">Tier 2</option>
+      <option value="Tier 3">Tier 3</option>
+    </select>
+    <input type="text" id="notes" placeholder="Notes (optional)">
+    <button type="submit">Add Target</button>
+  </form>
+
+  <h3>Existing Targets</h3>
+  <table id="admin-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Target Name</th>
+        <th>Assets</th>
+        <th>Priority</th>
+        <th>Notes</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
