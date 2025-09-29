@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: monospace;
         }
         
         body {
@@ -53,9 +53,18 @@
             background-color: #2a2ac2;
         }
         
+        .bounty-table-container {
+            width: 50%;
+            overflow-x: auto;
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+
         .table-container {
             overflow-x: auto;
-            background-color: #1e1e1e;
+            background-color: transparent;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             padding: 20px;
@@ -102,14 +111,47 @@
             <button class="submit-btn">Submit Report</button>
         </div>
         
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div class="bounty-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Low</th>
+                            <th>Medium</th>
+                            <th>High</th>
+                            <th>Critical</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tier 1</td>
+                            <td>₹200</td>
+                            <td>₹300</td>
+                            <td>₹400</td>
+                            <td>₹500</td>
+                        </tr>
+                        <tr>
+                            <td>Tier 2</td>
+                            <td>₹100</td>
+                            <td>₹200</td>
+                            <td>₹300</td>
+                            <td>₹400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="width: 50%;"><b>Please note</b><br><br> A 5% service fee will be deducted from each bounty reward. This helps us handle secure payments, maintain the platform, and ensure smooth coordination between hunters and startups. Thanks🫶!!!</p>
+        </div>
+
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Department</th>
-                        <th>Status</th>
+                        <th>Target</th>
+                        <th>Assets</th>
+                        <th>Priority</th>
                     </tr>
                 </thead>
                 <tbody>
