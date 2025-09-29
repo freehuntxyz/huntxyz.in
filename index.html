@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark Themed Table</title>
+    
     <style>
         * {
             margin: 0;
@@ -13,6 +14,7 @@
         }
         
         body {
+            background-image: url("");
             background-color: #121212;
             color: #e0e0e0;
             padding: 20px;
@@ -61,9 +63,11 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             padding: 20px;
+            color: rgb(0, 227, 0);
         }
 
         .table-container {
+            font-size: 14px;
             overflow-x: auto;
             background-color: transparent;
             border-radius: 8px;
@@ -89,7 +93,7 @@
             font-weight: 600;
         }
         
-        tr:hover {
+        .table-container tr:hover {
             background-color: #2a2a2a;
         }
         
@@ -108,7 +112,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Hunterxyz.in</h1>
+            <h1 style="color: yellow;">Hunterxyz.in</h1>
             <button class="submit-btn" onclick="window.open('https://forms.gle/DXANY8Nq9CLAbrC6A', '_blank')">Submit Report</button>
         </div>
         
@@ -153,6 +157,7 @@
                         <th>Target</th>
                         <th>Assets</th>
                         <th>Priority</th>
+                        <th>Rules</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -161,30 +166,35 @@
                         <td>John Smith</td>
                         <td>Engineering</td>
                         <td>Active</td>
+                        <td>dtfhfyj</td>
                     </tr>
                     <tr>
                         <td>002</td>
                         <td>Sarah Johnson</td>
                         <td>Marketing</td>
                         <td>Active</td>
+                        <td>rrrrrref</td>
                     </tr>
                     <tr>
                         <td>003</td>
                         <td>Michael Brown</td>
                         <td>Sales</td>
                         <td>Inactive</td>
+                        <td>53rg tge</td>
                     </tr>
                     <tr>
                         <td>004</td>
                         <td>Emily Davis</td>
                         <td>Human Resources</td>
                         <td>Active</td>
+                        <td>etg</td>
                     </tr>
                     <tr>
                         <td>005</td>
                         <td>Robert Wilson</td>
                         <td>Finance</td>
                         <td>Active</td>
+                        <td>tttttttttt</td>
                     </tr>
                 </tbody>
             </table>
